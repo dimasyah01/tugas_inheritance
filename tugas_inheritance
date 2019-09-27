@@ -1,0 +1,30 @@
+class datadiri(object):
+    def __init__(self, nama, tanggallahir, alamat, no_hp):
+        self.nama = nama
+        self.tanggallahir = tanggallahir
+        self.alamat = alamat
+        self.no_hp = no_hp
+
+    def mahasiswi(self):
+        print("Mahasiswa UNM")
+
+    def fakultas(self):
+        print("Fakultas Teknik")
+        print("Prodi Teknik Komputer")
+
+class datadiritambahan(datadiri):
+    def __init__(self, nama, tanggallahir, alamat, no_hp, nim):
+        self.nama = nama
+        self.tanggallahir = tanggallahir
+        self.alamat = alamat
+        self.no_hp = no_hp
+        self.nim = nim
+c = datadiritambahan("Dimas Syahbani", "17 Maret 2000", "Jl.Toddopuli 6", "082292998254","1829141018")
+print()
+print("Nama\t\t: ",c.nama)
+print("Tanggal Lahir\t: ",c.tanggallahir)
+print("Alamat\t\t: ",c.alamat)
+print("No_hp\t\t: ",c.no_hp)
+print("Nim\t\t: ",c.nim)
+c.mahasiswi()
+c.fakultas()
